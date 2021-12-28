@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_greyish_blue: hsl(227, 10%, 46%);
+    --Dark_grey: hsl(0, 0%, 59%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Dark_cyan);
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10rem 1rem;
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -42rem -38rem, 5rem 16rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main {
+    width: 80vw;
+}
+div.images {
+    display: grid;
+    place-content: center;
+    background-image: url(bg-pattern-card.svg);
+    padding-bottom: 1.5rem;
+    position: relative;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+div.userprofile {
+    background-color: white;
+    border-radius: 0 0 .5rem .5rem;
+}
+img {
+    border-radius: 4rem;
+    border: solid 4px white;
+    position: relative;
+    top: 4.5rem;
+    background-color: white;
+}
+div.userinfo {
+    display: grid;
+    grid-template-columns: 7rem 1rem;
+    place-content: center;
+    padding: 4rem 0 1rem 0;
+    font-size: 1.1rem;
+}
+div.username,
+b {
+    font-weight: 700;
+    color: var(--Very_dark_desaturated_blue);
+}
+span.age {
+    font-size: unset;
+}
+div.location {
+    margin-bottom: 1.2rem;
+    display: grid;
+    place-content: center;
+}
+hr {
+    width: 100%;
+}
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    place-content: center;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+}
+b {
+    font-size: 1.3rem;
+}
+span {
+    text-transform: capitalize;
+    font-size: .8rem;
+}
+span.age, 
+div.location, 
+span {
+    color: var(--Dark_grey);
+}
+footer {
+    font-size: 13px;
+    text-align: center; 
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
